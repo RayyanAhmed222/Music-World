@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="images/Logo-black.png">
+    <title>Music World</title>
+</head>
+<body>
+    
+    <header>
+            <a href="#" id="home" class="brand">MUSIC WORLD</a>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>            
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                    <a href="#home">HOME</a>
+                    <a href="#test">ABOUT</a>
+                    <a href="#card">ARTIST</a>
+                    <a href="#songs">SONGS</a>
+                    <a href="#event">EVENTS</a>
+                    <a><button class="sign-up" onclick="openForm()"><i style="margin-right: 10px; font-size: 14px;" class="fa-solid fa-user user"></i>Sign up</button></a>
+                <div class="form-popup" id="myForm">
+                    <form class="form-container">
+                      <h1>Login</h1>
+                      <label class="email" for="email">Email :</label>
+                      <input class="emaill" type="email" placeholder="Enter Email" name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+
+                      <label class="password" for="psw">Password :</label>
+                      <input class="passwordd" type="password" placeholder="Enter Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" name="psw" required>
+
+
+                      <button type="submit" id="loginn">Login</button>
+                      <button type="button" class="btn cancel" id="close" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="home">
+        <video class="video-slide active" src="images/Vid-1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/Vid-2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/Vid-3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/Vid-4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/Vid-6.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <div data-aos="fade-right">
+                <h1>DROWING.<br><span>In Melodies</span></h1>
+                <p>"drawing in melodies" suggests a sense of creativity, experimentation, and interaction in the process of creating and experiencing music and sound. It highlights the potential for visual and auditory senses to work together to create a more immersive and engaging experience.It's about losing oneself in the depths of harmonies, rhythms, and emotions, where every note becomes a wave that carries you away to another realm. Whether it's the haunting melody of a melancholic ballad or the pulsating beat of an electrifying anthem, each song becomes a lifeline, rescuing us from the noise of the world and plunging us into a sea of pure auditory bliss. Join us on a journey where the only destination is the euphoria found within the melodies that surround us.</p>
+                <button id="card" onclick="booked()">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="content">
+            <div data-aos="fade-right">
+                <h1>BANDS.<br><span>CONCERTS</span></h1>
+                <p>"Bands. Concerts." These two words resonate with the heartbeat of music lovers worldwide. Bands are the soulful storytellers, weaving narratives through melodies and lyrics that echo in our hearts. Concerts are the communal celebration, where the energy of the crowd merges with the passion of the performers to create unforgettable experiences. From the intimate venues where emerging talents find their voice to the grand arenas where legendary acts command the stage, every concert is a pilgrimage for fans, a testament to the power of live music to unite, inspire, and move us. Join us as we celebrate the magic of bands and concerts, where moments become memories and music becomes a lifelong companion.</p>
+                <button onclick="booked()">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="content">
+            <div data-aos="fade-right">
+                <h1>Guitars.<br><span></span></h1>
+                <p>Guitars are more than just instruments; they're extensions of the soul, channels through which emotions flow and stories are told. Whether acoustic or electric, each guitar carries its own unique character and voice, inviting players to explore the boundless possibilities of sound. From the gentle strumming of folk melodies to the blazing solos of rock anthems, guitars serve as versatile companions for musicians of all genres. They bridge cultures, generations, and continents, transcending language barriers to communicate universal truths through music. At our website, we celebrate the timeless allure of guitars, offering a curated selection of instruments, resources, and inspiration for players and enthusiasts alike. Join us in embracing the magic of six strings and endless creativity...</p>
+                <button onclick="booked()">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="content">
+            <div data-aos="fade-right">
+                <h1>MUSIC.<br><span>Vibes</span></h1>
+                <p>"Music Vibes" is not just a phrase; it's a state of being, an immersive journey through the rhythms and melodies that shape our lives. It's the electric pulse of anticipation before a concert, the soothing balm of a favorite song on a tough day, and the shared euphoria of a dance floor packed with kindred spirits. At our website, we're dedicated to curating the ultimate collection of music vibes, from soul-stirring playlists to insightful articles exploring the transformative power of music. Whether you're seeking to discover new artists, reminisce with old favorites, or simply connect with fellow music enthusiasts, we invite you to join our community and let the vibes carry you away...</p>
+                <button onclick="booked()">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="content">
+            <div data-aos="fade-right">
+                <h1>DRUMS.<br><span>CONCERTS</span></h1>
+                <p>Drums concerts are the heartbeat of the music scene, pulsating with energy and driving the rhythm that moves us all. From the thunderous beats of stadium rock shows to the intimate gatherings where every snare hit is felt in the soul, these concerts are a celebration of percussive prowess and sonic synergy. The stage becomes a battleground where drummers unleash their passion and skill, commanding attention with every stroke and fill. At our website, we're dedicated to showcasing the electrifying world of drums concerts, offering insights, reviews, and behind-the-scenes glimpses into the artistry that fuels these unforgettable performances. Join us in experiencing the raw power and primal allure of drums concerts, where rhythm reigns supreme and the beat goes on...</p>
+                <button onclick="booked()">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="media-icons">
+            <div data-aos="fade-left">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div data-aos="fade-left">
+                <a href="https://twitter.com/" target="_blank"><i style="margin-top: 20px;" class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div data-aos="fade-left">
+                <a href="https://www.instagram.com/" target="_blank"><i style="margin-top: 10px;" class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div data-aos="fade-up">
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+        </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="card" class="card">
+                            <div class="card-inner">
+                                <div class="front">
+                                    <h2>TRAVIS SCOTT</h2>
+                                    <P>RAPPER<span></span></P>
+                                </div>
+                                <div class="back">
+                                    <h1>TRAVIS <Span>SCOTT</Span></h1>
+                                    <P><span>ACTIVE YEARS : </span>2008 <span>-</span> Present</P>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>18K</h2>
+                                            <p>Follower</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>192K</h2>
+                                            <p>Following</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>500K</h2>
+                                            <p>Like</p>
+                                        </div>
+                                    </div>
+                                        <button><a class="popup-btn">More Details</a></button>
+                                </div>
+                            </div>
+                            <div class="popup-view">
+                                <div class="popup-card">
+                                    <a><i class="fas fa-times close-btn"></i></a>
+                                    <div class="travis">
+                                        <img src="img/Travis.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-one">
+                                        <h2>PERSONAL INFORMATION</h2>
+                                        <p style="width: 300px;">Travis Scott, whose real name is Jacques Bermon Webster II, is an American rapper, 
+                                           singer, songwriter, and record producer. He was born on April 30, 1991, in Houston, 
+                                           Texas, and grew up in a middle-class suburban area bordering southwest Houston. 
+                                           He attended Elkins High School and graduated at seventeen, participating in 
+                                           musical theater during high school. Webster then attended the University of Texas 
+                                           at San Antonio, but dropped out his second year to pursue his music caree
+                                        </p>
+                                        </div>
+                                        <div class="info-two">
+                                        <h2>ARTIST INFORMATION</h2>
+                                        <p style="width: 300px;"> Occupation: Rapper, singer, songwriter, record producer
+                                            Genres: Hip hop, trap, psychedelic, alternative
+                                            Active Years: 2008–present
+                                            Travis Scott, born Jacques Webster II, is an American rapper, singer, songwriter, and 
+                                            record producer. Known for his unique blend of hip hop, trap, and alternative 
+                                            sounds, Travis Scott has become a prominent figure in the music industry.
+                                        </p>
+                                        </div>
+                                        <div class="info-three">
+                                        <h2>CAREER</h2>
+                                        <p style="width: 300px;">
+                                            Throughout his career, Scott has achieved four number-one hits on the US Billboard
+                                            Hot 100 chart, along with a total of over one hundred charting songs. Scott has been 
+                                            nominated for eight Grammy Awards and won a Latin Grammy Award, Billboard 
+                                            Music Award, MTV Video Music Award, and multiple BET Hip Hop Awards                        
+                                        </p>
+                                        </div>
+                                        <div class="info-four">
+                                            <h2>ALBUMS</h2>
+                                        <p style="width: 300px;">
+                                            Rodeo (2015) <br>
+                                            Popular Songs: "Antidote," "3500," "Piss on Your Grave," "Nightcrawler" <br>
+                                            Genre: Hip Hop, Trap <br>
+                                            Total Tracks: 16 <br>
+                                            Total Duration: 65:00 <br>
+                                            Label: Grand Hustle, Epic <br>
+                                            Birds in the Trap Sing McKnight (2016) <br>
+                                            Popular Songs: "Goosebumps," "Butterfly Effect," "Through the Late Night," "Pick  <br>
+                                            Up the Phone" <br>
+                                            Genre: Hip Hop, Trap <br>
+                                            Total Tracks: 14 <br>
+                                            Total Duration: 51:00 <br>
+                                            Label: Grand Hustle, Epic
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="front one">
+                                    <h2>TUPAC SHAKUR</h2>
+                                    <P>ROCK<span></span></P>
+                                </div>
+                                <div class="back">
+                                    <h1>TUPAC<Span> SHAKUR</Span></h1>
+                                    <P><span>ACTIVE YEARS : </span>1990 <span>-</span> 1996</P>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>45K</h2>
+                                            <p>Follower</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>103K</h2>
+                                            <p>Following</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>305K</h2>
+                                            <p>Like</p>
+                                        </div>
+                                    </div>
+                                        <button><a class="popup-btn">More Details</a></button>
+                                </div>
+                            </div>
+                            <div style="left: -220px;" class="popup-view">
+                                <div class="popup-card">
+                                    <a><i class="fas fa-times close-btn"></i></a>
+                                    <div class="travis">
+                                        <img src="img/Travis.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-one">
+                                        <h2>PERSONAL INFORMATION</h2>
+                                        <p style="width: 300px;">
+                                           Full Name: Tupac Amaru Shakur <br>
+                                           Date of Birth: June 16, 1971 <br>
+                                           Place of Birth: East Harlem, New York City, USA <br>
+                                           Date of Death: September 13, 1996 (aged 25) <br>
+                                           Place of Death: Las Vegas, Nevada, USA <br>
+                                           Tupac Shakur was an American rapper, actor, and activist born on June 16, 1971, in 
+                                           East Harlem, New York City. He was raised by his mother, Afeni Shakur, who was a 
+                                           member of the Black Panther Party.
+                                        </p>
+                                        </div>
+                                        <div class="info-two">
+                                        <h2>ARTIST INFORMATION</h2>
+                                        <p style="width: 300px;"> 
+                                           Occupation: Rapper, actor, activist <br>
+                                           Genres: Hip hop, West Coast hip hop <br>
+                                           Active Years: 1990–1996 <br>
+                                           Tupac Shakur, commonly known by his stage names 2Pac and Makaveli, was an 
+                                           American rapper, actor, and social activist. He is considered one of the greatest and 
+                                           most influential figures in the history of hip hop.
+                                        </p>
+                                        </div>
+                                        <div class="info-three">
+                                        <h2>CAREER</h2>
+                                        <p style="width: 300px;">
+                                            Tupac received several award nominations and honors, including Grammy 
+                                            nominations. His contributions to the genre and his impact on the cultural 
+                                            landscape have been recognized by the industry. <br>
+                                            Even after his untimely death in 1996, Tupac's unreleased recordings continued tobe
+                                            released posthumously. Albums like "The Don Killuminati: The 7 Day Theory" 
+                                            (released under the alias Makaveli) and other posthumous releases achieved 
+                                            commercial success.                       
+                                        </p>
+                                        </div>
+                                        <div class="info-four">
+                                            <h2>ALBUMS</h2>
+                                        <p style="width: 300px;"> <br>
+                                            "All Eyez on Me" (1996)
+                                            Released: February 13, 1996 <br>
+                                            Label: Death Row Records, Interscope Records <br>
+                                            Producers: 2Pac, Dr. Dre, Daz Dillinger, DJ Pooh, Johnny J, QDIII, RZA, Stretch, The <br>
+                                            D.O.C.
+                                            Recording Locations: Los Angeles, California; New York City, New York <br>
+                                            Running Time: 106 minutes <br>
+                                            Singles: "California Love", "How Do U Want It", "I Ain't Mad at Cha" <br>
+                                            TRACKLIST: <br>
+                                            "Soldier Like Me" (feat. The Outlawz) <br>
+                                            "How Do U Want It" (feat. K-Ci & JoJo) <br>
+                                            "I Ain't Mad at Cha" (feat. Danny Boy) <br>
+                                            "What'z Ya Phone #" (feat. Danny Boy) <br>
+                                            "Hit 'Em Up" (feat. The Outlawz) 
+                                        </p> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="front two">
+                                    <h2>ATIF ASLAM</h2>
+                                    <P>CLASSICAL<span></span></P>
+                                </div>
+                                <div class="back">
+                                    <h1>ATIF <Span>ASLAM</Span></h1>
+                                    <P><span>ACTIVE YEARS : </span>2000 <span>-</span> Present</P>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>120K</h2>
+                                            <p>Follower</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>94K</h2>
+                                            <p>Following</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>96K</h2>
+                                            <p>Like</p>
+                                        </div>
+                                    </div>
+                                        <button><a class="popup-btn">More Details</a></button>
+                                </div>
+                            </div>
+                            <div style="left: -880px;" class="popup-view">
+                                <div class="popup-card">
+                                    <a><i class="fas fa-times close-btn"></i></a>
+                                    <div class="travis">
+                                        <img src="img/Travis.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-one">
+                                        <h2>PERSONAL INFORMATION</h2>
+                                        <p style="width: 300px;">
+                                            Full Name: Muhammad Atif Aslam <br>
+                                            Date of Birth: March 12, 1983 <br>
+                                            Place of Birth: Wazirabad, Pakistan <br>
+                                            Nationality: Pakistani <br>
+                                            Genres: Pop, Rock, Sufi, Folk <br>
+                                            Occupation(s): Singer, Songwriter, Actor <br>
+                                            Years Active: 2000-present <br>
+                                            Spouse(s): Sara Bharwana (m. 2013)
+                                        </p>
+                                        </div>
+                                        <div class="info-two">
+                                        <h2>ARTIST INFORMATION</h2>
+                                        <p style="width: 300px;"> 
+                                            Atif Aslam is a Pakistani singer, songwriter, and actor who has gained popularity in 
+                                            both Pakistan and India. <br>
+                                            Occupation: Singer, Actor, Songwriter <br>
+                                            Genres: Pop, Rock, Sufi <br>
+                                            Instruments: Vocals, Guitar <br>
+                                            Atif's soulful and emotive vocals quickly captured the hearts of music lovers, making
+                                            him one of the most prominent figures in the South Asian music industry. His music
+                                            is characterized by a unique blend of pop, rock, and Sufi influences, creating a 
+                                            sound that resonates with a diverse audience.
+                                        </p>
+                                        </div>
+                                        <div class="info-three">
+                                        <h2>CAREER</h2>
+                                        <p style="width: 300px;">
+                                            He began his singing career in 2000 as a lead vocalist for the band Jal, which he 
+                                            co-founded with guitarist Goher Mumtaz. <br>
+                                            After leaving Jal in 2004, Aslam launched his solo career with the release "Jal Pari", 
+                                            which became a massive hit in Pakistan                     
+                                        </p>
+                                        </div>
+                                        <div class="info-four">
+                                            <h2>ALBUMS</h2>
+                                        <p style="width: 300px;">
+                                            Jal Pari (2004)  <br>
+                                            This is Atif Aslam's debut solo studio album, which was released under the label 
+                                           Sound Master Records. <br>
+                                            SONGS: <br>
+                                           "Bheegey Hont Tere," "Ehsaas," "Mahi Ve," and the title track "Jal Pari." <br>
+                                           <br>
+                                            Doorie (2006) <br>
+                                            This is Atif Aslam's second studio album, which was released under the label Fire 
+                                           Records. <br>
+                                            The album was also a commercial success and featured some of Atif Aslam's most 
+                                           popular songs. <br>
+                                            SONGS: <br>
+                                            "Doorie," "Wo Lamhey," "Ek Nazar," and "Yakeen."
+                                        </p> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="front three">
+                                    <h2>LIL WAYEN</h2>
+                                    <P>POP<span></span></P>
+                                </div>
+                                <div class="back">
+                                    <h1>LIL <Span>WAYEN</Span></h1>
+                                    <P><span>ACTIVE YEARS : </span>1996 <span>-</span> Present</P>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2>129K</h2>
+                                            <p>Follower</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>120K</h2>
+                                            <p>Following</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2>105K</h2>
+                                            <p>Like</p>
+                                        </div>
+                                    </div>
+                                        <button><a class="popup-btn">More Details</a></button>
+                                </div>
+                            </div>
+                            <div style="left: -1540px;" class="popup-view">
+                                <div class="popup-card">
+                                    <a><i class="fas fa-times close-btn"></i></a>
+                                    <div class="travis">
+                                        <img src="img/Travis.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-one">
+                                        <h2>PERSONAL INFORMATION</h2>
+                                        <p style="width: 300px;">
+                                            Full Name: Dwayne Michael Carter Jr. <br>
+                                            Stage Name: Lil Wayne <br>
+                                            Date of Birth: September 27, 1982 <br>
+                                            Place of Birth: New Orleans, Louisiana, USA <br>
+                                            Lil Wayne's solo career took off with the release of "Tha Block Is Hot" (1999), his 
+                                            debut solo album. <br>
+                                            Continued to release critically acclaimed albums, including "Tha Carter" series.   
+                                        </p>
+                                        </div>
+                                        <div class="info-two">
+                                        <h2>ARTIST INFORMATION</h2>
+                                        <p style="width: 300px;"> 
+                                            Occupation: Rapper, singer, songwriter, record executive <br>
+                                            Genres: Hip hop, rap <br>
+                                            Active Years: 1996–present <br>
+                                            Lil Wayne, born Dwayne Michael Carter Jr., is an American rapper, singer, and 
+                                            songwriter. Hailing from New Orleans, Louisiana, he gained prominence at a young 
+                                            age and has since become one of the most influential figures in hip hop.
+                                        </p>
+                                        </div>
+                                        <div class="info-three">
+                                        <h2>CAREER</h2>
+                                        <p style="width: 300px;">
+                                            Grammy Awards:
+                                            Lil Wayne has won multiple Grammy Awards, including Best Rap Album for "Tha 
+                                            Carter III" (2008) and "Tha Carter IV" (2012). <br>
+                                            <br>
+                                            Hot Boys and Cash Money Records: 
+                                            Lil Wayne began his career as a member of the Hot Boys, a rap group formed by 
+                                            Cash Money Records. <br>
+                                            Achieved early success with albums like "Get It How U Live!" and "Guerrilla 
+                                            Warfare." <br>
+                                            <br>
+                                            Solo Career:
+                                            Lil Wayne's solo career took off with the release of "Tha Block Is Hot" (1999), his 
+                                            debut solo album. <br>
+                                            Continued to release critically acclaimed albums, including "Tha Carter" series.                   
+                                        </p>
+                                        </div>
+                                        <div class="info-four">
+                                            <h2>ALBUMS</h2>
+                                        <p style="width: 300px;">
+                                            Tha Carter (2004) <br>
+                                            Genre: Hip Hop, Southern Hip Hop <br>
+                                            Total Tracks: 14 <br>
+                                            Total Duration: 54:00 <br>
+                                            Label: Cash Money, Universal <br>
+                                            SONGS: <br>
+                                            "Go D.J.," "Bring It Back," "Shine," "Earthquake" <br>
+                                            <br>
+                                            Tha Carter II (2005) <br>
+                                            Genre: Hip Hop, Southern Hip Hop <br>
+                                            Total Tracks: 16 <br>
+                                            Total Duration: 72:00 <br>
+                                            Label: Cash Money, Universal <br>
+                                            SONGS: <br>
+                                            "Fireman," "Money on My Mind," "Hustler Musik," "Shooter"
+                                        </p> <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="concerts">
+                        <h2 class="heading">Concerts <span>Begins..</span></h2>
+                        <p class="para"><span>"Hurry up!" </span> Buy your tickets.   Enjoy the event.</p>
+                        <button onclick="booked()" class="btn-one">BUY TICKETS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background: #222; padding: 10px 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="songs" class="sponsors">
+                            <a href="https://www.blackberry.com/us/en" target="_blank"><h2>BlackBerry</h2></a>
+                            <a href="https://www.redbull.com/pk-en/" target="_blank"><h2>RedBull</h2></a>
+                            <a href="https://www.playstation.com/en-us/" target="_blank"><h2>PlayStation</h2></a>
+                            <a href="https://www.instagram.com/juicewrld999/?hl=en" target="_blank"><h2>999</h2></a>
+                            <a href="https://music.apple.com/us/browse" target="_blank"><h2>iTune Music</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div data-aos="fade-right">
+                        <h2 class="heading-nine">Hand-Picked Playlists</h2>
+                    </div>
+                    <div data-aos="fade-up">
+                        <p class="para-four">Randy Travis, a country music legend and Hall of Famer, has recently launched a curated playlist called "Diggin’ Up Songs," showcasing his taste and selection of country music artists. </p>
+                        <p class="para-five">Go ahead -></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <audio src="" id="audio"></audio>
+
+                    <div data-aos="fade-up">
+                        <div class="music-player">
+        
+
+                            <div class="disk"></div>
+        
+                            <h1 class="music-name">i-know</h1>
+                            <p class="artist-name">Travis scott</p>
+        
+                            <div class="song-slider">
+                                <input type="range" value="0" class="seek-bar">
+                                <span class="current-time">00:00</span>
+                                <span class="song-duration">00:00</span>
+                            </div>
+        
+                            <div class="controls">
+                                <button class="btn backward-btn"><img src="images/pre.png" alt=""></button>
+                                <button class="play-btn pause">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <button class="btn forward-btn"><img src="images/nxt.png" alt=""></button>
+        
+                            </div>
+        
+                            </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-up">
+                    <h2 class="release">New <span>Released</span></h2>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-right">
+                        <div class="don">
+                            <h2>Don <span>Toliver</span></h2>
+                            <p>Don Toliver has released a new song and music video called "Bandit" via Cactus Jack and Atlantic Records. This is his first new music release since his 2023 album "Love Sick".</p>
+                            <video style="margin-top: 0px; width: 300px; height: 200px; margin-bottom: 100px;"  src="audio/no idea.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-up">
+                        <div class="weeknd">
+                            <h2>Weeknd</h2>
+                            <p>The Weeknd released a new version of his song "Die For You" featuring Ariana Grande on February 11, 2023</p>
+                            <video style="margin-top: 0px; width: 300px; height: 200px; margin-bottom: 100px; margin-left: 85px;"  src="audio/DIE FOR YOU.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-left">
+                        <div class="rocky">
+                            <h2>A$AP <span>Rocky</span></h2>
+                            <p>ASAP Rocky has released a new song and music video called "Shittin' Me" on February 17, 2023</p>
+                            <video style="margin-top: 0px; width: 300px; height: 200px; margin-left: 150px; margin-bottom: 100px;"  src="audio/Praise The Lord.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div  id="event" class="container">
+            <div class="row">
+                <div data-aos="fade-up">
+                    <h2 class="events">Events</h2>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-right">
+                        <h2 class="heading-two">ABOUT <span>EVENT</span></h2>
+                    </div>
+                    <div class="vid-1">
+                        <video style="margin-top: 0px; width: 250px; height: 200px;" src="images/concert.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-up">
+                        <h2 class="heading-three">Summer <span>Concerts ..</span></h2>
+                        <p class="para-one">Travis Scott, an acclaimed rapper and business mogul, has built a reputation for his high-energy and thrilling summer music events. His Astroworld Festival, named after his third studio album, was a much-anticipated event in the music world</p>
+                        <p class="read-more">Read More -></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-left">
+                        <h2 class="lated-vid">Latest <span>Videos</span></h2>
+                    </div>
+                    <div class="vid-2">
+                        <video src="images/i-know.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div data-aos="fade-right">
+                        <h2 class="heading-four">Up Coming <span>EVENTS</span></h2>
+                    </div>
+                    <div class="img-1">
+                        <img style="margin-top: 0px; width: 250px; height: 150px;" src="images/event.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-up">
+                        <h2 class="heading-five">TRAVIS <span>SCOTT</span></h2>
+                        <p class="para-two">Upcoming concerts in 2024 announced for the rapper, fans can still track Travis Scott on Songkick to receive alerts for any new tour announcements and concert information. Scott is known for his unique and visually stunning concerts, featuring roller coaster-like setups and high-quality lighting and video production.</p>
+                        <p class="read-more">Read More -></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div data-aos="fade-right">
+                        <h2 class="heading-six">Latest <span>Post</span></h2>
+                    </div>
+                    <div class="img-2">
+                        <img style="margin-left: 0px;  width: 200px; height: 300px; margin-bottom: 100px;" src="images/juice-wrld.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-up">
+                        <h2 class="heading-seven">JUICE - <span>WRLD</span></h2>
+                        <p class="para-three">Juice WRLD's music was heavily influenced by a variety of genres, including emo, rock, and rap. He was known for his melodic flow and his ability to seamlessly blend singing and rapping. Some of his other popular songs include "Robbery," "Armed and Dangerous," and "Bandit." </p>
+                        <p class="read-more">Read More -></p>
+                        <br>
+                        <p class="para-three">Juice WRLD's music continues to inspire and connect with fans around the world, and his legacy lives on through his many awards and accolades. He left behind a body of work that is both innovative and emotionally resonant, and his influence can be heard in the music of many of today's most popular artists.</p>
+                        <p class="read-more">Read More -></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div data-aos="fade-left">
+                        <h2 class="heading-eight">Photo <span>Gallerys</span></h2>
+                    </div>
+                    <div class="img-3">
+                        <img style="height: 60px; width: 100px; margin-left: 150px; margin-top: 10px;" src="images/T-1.webp" alt=""><br>
+                        <img style="height: 60px; width: 100px; margin-left: 150px; margin-top: 3px;" src="images/T-2.jpg" alt="">
+                        <img style="height: 60px; width: 100px; margin-left: 150px; margin-top: -3px;" src="images/T-4.webp" alt="">
+                        <img style="height: 200px; width: 100px; margin-top: -130px;" src="images/T-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="test" class = "container">
+            <div class = "testimonials">
+                <div class = "title">
+                    <div data-aos="fade-up">
+                        <h2>Testimonials</h2>
+                        <h3>aplha corporation</h3>
+                    </div>
+                </div>
+    
+                <div class = "section">
+                    <div class = "clients-list">
+                        <div data-aos="fade-right">
+                            <div class = "clients-tabs">
+                                <!-- item -->
+                                <div class = "client-item">
+                                    <div class = "client-thumb">
+                                        <img src = "images/Travis.jpg" alt = "">
+                                    </div>
+                                    <div class = "client-intro">
+                                        <h5 class = "client-name">Travis Scoot</h5>
+                                        <small class = "client-designation">Rapper</small>
+                                        <p class = "description">Travis is a Scottish rock band that was formed in Glasgow in 1990. The band consists of Fran Healy (lead vocals, guitar, piano), Dougie Payne (bass guitar, backing vocals), Andy Dunlop (lead guitar, banjo, keyboards, backing vocals), and Neil Primrose (drums, percussion).</p>
+                                    </div>
+                                </div>
+                                <!-- end of item  -->
+        
+                                <!-- item -->
+                                <div class = "client-item">
+                                    <div class = "client-thumb">
+                                        <img src = "images/Tupacc.jpg" alt = "">
+                                    </div>
+                                    <div class = "client-intro">
+                                        <h5 class = "client-name">Tupac Shakur</h5>
+                                        <small class = "client-designation">Rock</small>
+                                        <p class = "description">Tupac was known for his socially conscious lyrics, which often addressed issues such as racism, poverty, and violence. He was also known for his storytelling ability, and his songs often featured vivid, cinematic narratives that explored themes of struggle, survival, and redemption.</p>
+                                    </div>
+                                </div>
+                                <!-- end of item  -->
+        
+                                <!-- item -->
+                                <div class = "client-item">
+                                    <div class = "client-thumb">
+                                        <img class="atif" src = "images/ATIF ASLAM.jpg" alt = "">
+                                    </div>
+                                    <div class = "client-intro">
+                                        <h5 class = "client-name">Atif Aslam</h5>
+                                        <small class = "client-designation">Classical</small>
+                                        <p class = "description">Aslam is known for his powerful, emotive voice and his ability to sing in a variety of styles, from pop and rock to traditional Pakistani music. He has a wide vocal range and is able to convey a range of emotions through his singing, from joy and excitement to sadness and longing.</p>
+                                    </div>
+                                </div>
+                                <!-- end of item  -->
+        
+                                <!-- item -->
+                                <div class = "client-item">
+                                    <div class = "client-thumb">
+                                        <img src = "images/Lil wayen.png" alt = "">
+                                    </div>
+                                    <div class = "client-intro">
+                                        <h5 class = "client-name">Lil Wayen</h5>
+                                        <small class = "client-designation">Pop</small>
+                                        <p class = "description">Lil Wayne is known for his rapid-fire, stream-of-consciousness flow, as well as his ability to switch between singing and rapping. He is also known for his prolific output, having released dozens of mixtapes and guest appearances in addition to his studio albums.</p>
+                                    </div>
+                                </div>
+                                <!-- end of item  -->
+        
+                                <!-- item -->
+        
+                                <!-- end of item  -->
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class = "show-info">
+                        <div data-aos="fade-up">
+                            <div class = "show-img">
+                                <img src = "images/Tupacc.jpg" alt = "client image">
+                            </div>
+                        </div>
+    
+    
+    
+    
+                        <div data-aos="fade-left">
+                            <div class = "show-text">
+                                <div>
+                                    <h4 class = "show-name">Erick Jones</h4>
+                                    <small class = "show-designation">Managing Director</small>
+                                </div>
+                                <p class = "show-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt assumenda nostrum dignissimos et repellat illum omnis repudiandae atque, ducimus quo, est delectus tempore facilis odit ullam magnam accusantium cumque ipsa</p>
+                                <a href = "#">inquire now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="cotainer">
+            <div class="row">
+                <div data-aos="fade-up">
+                    <h2 class="head">Instruments</h2>
+                </div>
+                <div class="container-fluid carousel slide carousel-fade" id="mycarousel" data-bs-ride="carousel" >
+                    <div class="carousel-indicators">
+                        <div data-aos="fade-down">
+                            <button class="active" data-bs-target="#mycarousel" data-bs-slide-to="0"></button>
+                            <button  data-bs-target="#mycarousel" data-bs-slide-to="1"></button>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div data-aos="fade-right">
+                                            <div class="cards" style="width: 18rem;">
+                                                <img src="./images/guitar.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h2>Guitar</h2>
+                                                  <p class="card-text">A guitar is a stringed musical instrument that is played by plucking, strumming, or picking the strings with the fingers or a plectrum. Guitars are one of the most popular and versatile instruments in the world, used in a wide variety of musical styles, including rock, pop, jazz, classical, and folk.</p>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div data-aos="fade-up">
+                                            <div class="cards" style="width: 18rem;">
+                                                <img src="./images/pianoo.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h2>Piano</h2>
+                                                  <p class="card-text">A piano is a stringed musical instrument that is played by striking the strings with a hammer when the keys are pressed. Pianos are one of the most popular and versatile instruments in the world, used in a wide variety of musical styles, including classical, jazz, pop, and rock..</p>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div data-aos="fade-left">
+                                            <div class="cards" style="width: 18rem;">
+                                                <img src="./images/drums.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h2>Drums</h2>
+                                                  <p card-text">Drums are a type of percussion instrument that are played by striking a surface with a drumstick, mallet, or the hands. Drums are used in a wide variety of musical styles, including rock, jazz, pop, classical, and world music.</p>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div data-aos="fade-right">
+                                            <div class="cards" style="width: 18rem;">
+                                                <img src="./images/FL-Studio.webp" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h2>Fl - Studio</h2>
+                                                  <p class="card-text">A session musician, also known as a studio musician or backing musician, is a musician who is hired to perform in a recording session or a live performance. They are usually not permanent or official members of a musical ensemble or band.</p>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div data-aos="fade-up">
+                                            <div class="cards" style="width: 18rem;">
+                                                <img src="./images/learn.webp" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h2>Fl - Studio Learning</h2>
+                                                  <p class="card-text">It's important to note that becoming proficient in music production and recording can take time and dedication, but with persistence and the right resources, you can develop the skills and knowledge necessary to record and produce music in a professional studio setting as a music artist..</p>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div data-aos="fade-left">
+                                            <div class="cards" style="width: 18rem;">
+                                                <img src="images/beat.webp" alt="">
+                                                <div class="card-body">
+                                                    <h2>Beats</h2>
+                                                  <p class="card-text">Beats by Dre, a subsidiary of Apple Inc., is known for its high-quality audio products such as headphones, earphones, and speakers. Many music artists have endorsed Beats by Dre products, either through partnerships or by being seen using them in public..</p>
+                                                </div>
+                                              </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" data-bs-target="#mycarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target="#mycarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background: #222; padding: 10px 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="songs" class="sponsorss">
+                            <a href="https://www.apple.com/" target="_blank"><h2>Apple</h2></a>
+                            <a href="https://www.versace.com/" target="_blank"><h2>Versacel</h2></a>
+                            <a href="https://www.nike.com/jordan" target="_blank"><h2>Jordan</h2></a>
+                            <a href="https://www.gucci.com/us/en/" target="_blank"><h2>Gucci</h2></a>
+                            <a href="https://www.redbull.com/pk-en/" target="_blank"><h2>RedBull</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-3">
+                   <a href="#" id="home" class="brand">MUSIC WORLD</a>
+                   <p>One of the most attractive aspects of the music world is its diversity. With so many different genres, styles, and artists to choose from, there is truly something for everyone. Whether you're a fan of classic rock, pop, hip hop, country, or electronic music, the music world has you covered.</p>
+            </div>
+            <div class="col-md-3">
+                <h3 class="office">Office <div class="underline-1"><span></span></div></h3>
+                <p>ITPL Road</p>
+                <p>White field. karachi</p>
+                <p>Islambad, pin 546543, india</p>
+                <p class="email-id">aptech@gmail.com</p>
+                <h4>+9---------</h4>
+            </div>
+            <div class="col-md-3">
+                <h3 class="link">links <div class="underline-2"><span></span></div></h3>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#card">ARTIST</a></li>
+                    <li><a href="#songs">SONGS</a></li>
+                    <li><a href="#event">EVENTS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="letter">Newsletter <div class="underline-3"><span></span></div></h3>
+                <form>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email-id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right fa-beat"></i></button>
+                </form>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">MUSIC WORLD Copyright© 2024. All Rights Reserved </p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+ 
+
+
+
+        function booked() {
+            alert("Tickets Booked.  Enjoy the Event");
+        }
+
+        AOS.init();
+
+
+        
+
+
+    </script>
+    <script src="index.js"></script>
+    <script src="popup.js"></script>
+    <script src="slide.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
